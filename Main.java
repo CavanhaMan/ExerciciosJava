@@ -75,3 +75,54 @@ public class Main {
 		sc.close();
 	}
 }
+/*
+_________________________________________
+Valores de teste 1:
+-----------------------------------------
+48000.00
+0.00
+800.00
+400.00
+5400.00
+-----------------------------------------
+Resultados 1:
+-----------------------------------------
+RELATÓRIO DE IMPOSTO DE RENDA
+CONSOLIDADO DE RENDA:
+Imposto sobre salário: 4800.00
+Imposto sobre serviços: 0.00
+Imposto sobre ganho de capital: 160.00
+DEDUÇÕES:
+Máximo dedutível: 1488.00
+Gastos dedutíveis: 5800.00
+RESUMO:
+Imposto bruto total: 4960.00
+Abatimento: 1488.00
+Imposto devido: 3472.00
+
+
+_________________________________________
+Valores de teste 2:
+-----------------------------------------
+189000.00
+55184.93
+20000.00
+600.00
+7500.00
+-----------------------------------------
+Resultados 2:
+-----------------------------------------
+RELATÓRIO DE IMPOSTO DE RENDA
+CONSOLIDADO DE RENDA:
+Imposto sobre salário: 37800.00
+Imposto sobre serviços: 8277.74
+Imposto sobre ganho de capital: 4000.00
+DEDUÇÕES:
+Máximo dedutível: 15023.32
+Gastos dedutíveis: 8100.00
+RESUMO:
+Imposto bruto total: 50077.74
+Abatimento: 8100.00
+Imposto devido: 41977.74 
+
+*/
