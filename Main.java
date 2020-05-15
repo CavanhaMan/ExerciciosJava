@@ -11,40 +11,66 @@ public class Main {
 		Locale.setDefault(new Locale("en", "US"));
 		Scanner sc = new Scanner(System.in);
 		
-		float imposto;
-		float salario = sc.nextFloat();
-		
-		if (salario <= 3000) imposto = 0;
-		
-		
-		System.out.println("Renda anual com salário:");
+		System.out.printf("Renda anual com salário:");
 		float rSalario = sc.nextFloat();
-		System.out.println("Renda anual com prestação de serviço:");
+		System.out.printf("Renda anual com prestação de serviço:");
 		float rServico = sc.nextFloat();
-		System.out.println("Renda anual com ganho de capital:");
+		System.out.printf("Renda anual com ganho de capital:");
 		float rCapital = sc.nextFloat();
-		System.out.println("Gastos médicos:");
+		float rTotal = rSalario + rServico + rCapital;
+		
+		System.out.printf("Gastos médicos:");
 		float gMedicos = sc.nextFloat();
-		System.out.println("Gastos educacionais:");
+		System.out.printf("Gastos educacionais:");
 		float gEducacao = sc.nextFloat();
+		float gTotal = gMedicos + gEducacao;
 		
 		System.out.println("\nRELATÓRIO DE IMPOSTO DE RENDA");
 		System.out.println("\nCONSOLIDADO DE RENDA:");
-		System.out.println("Imposto sobre salário:");
-		System.out.println("Imposto sobre serviços:");
-		System.out.println("Imposto sobre ganho de capital:");
 		
+		/** IMPOSTO SOBRE SALARIO *********/
+		float iSalario=0;
+		if (rSalario <= 3000) iSalario = 0;
+		else if(rSalario > 3000 && rSalario < 5000) iSalario = rSalario*10/100;
+		else if(rSalario >= 5000) iSalario = rSalario*20/100;
+		if (iSalario == 0) 
+			System.out.println("Imposto sobre salário: Isento");
+		else
+			System.out.printf("Imposto sobre salário: %.2f\n",iSalario);
+		
+		/** IMPOSTO SOBRE SERVIÇOS *********/
+		float iServico=0;
+		if (rServico > 0)
+			iServico = rServico*15/100;
+		
+		System.out.printf("Imposto sobre serviços: %.2f\n", iServico);
+		
+		/** IMPOSTO SOBRE GANHOS DE CAPITAL *********/
+		float iCapital=0;
+		if (rCapital > 0)
+			iCapital = rCapital*20/100;
+		
+		System.out.printf("Imposto sobre ganho de capital: %.2f\n", iCapital);
+		
+		float iTotal = iSalario+iServico+iCapital;
+
 		System.out.println("\nDEDUÇÕES:");
-		System.out.println("Máximo dedutível:");
-		System.out.println("Gastos dedutíveis:");
+		System.out.printf("Máximo dedutível:\n");
+		System.out.printf("Gastos dedutíveis:\n");
 		
 		System.out.println("\nRESUMO:");
-		System.out.println("Imposto bruto total:");
-		System.out.println("Abatimento:");
-		System.out.println("Imposto devido:");
+		System.out.printf("Imposto bruto total: %.2f\n", iTotal);
+		System.out.printf("Abatimento:\n");
+		System.out.printf("Imposto devido:\n");
 		
 
 		sc.close();
 	}
 }
+/*
+Salário Imposto
+Abaixo de 3000 por mês:		Isento
+3000 até 5000 exclusive:	10%
+5000 ou acima:				20% 
 
+ */
