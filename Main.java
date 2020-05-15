@@ -1,3 +1,4 @@
+package projeto01;
 /*
 +------------------+
 |Rodrigo CavanhaMan|
@@ -11,6 +12,7 @@ public class Main {
 		Locale.setDefault(new Locale("en", "US"));
 		Scanner sc = new Scanner(System.in);
 		
+		/** RENDAS *********/
 		System.out.printf("Renda anual com salário:");
 		float rSalario = sc.nextFloat();
 		System.out.printf("Renda anual com prestação de serviço:");
@@ -19,6 +21,7 @@ public class Main {
 		float rCapital = sc.nextFloat();
 		float rTotal = rSalario + rServico + rCapital;
 		
+		/** GASTOS *********/
 		System.out.printf("Gastos médicos:");
 		float gMedicos = sc.nextFloat();
 		System.out.printf("Gastos educacionais:");
@@ -55,22 +58,15 @@ public class Main {
 		float iTotal = iSalario+iServico+iCapital;
 
 		System.out.println("\nDEDUÇÕES:");
-		System.out.printf("Máximo dedutível:\n");
-		System.out.printf("Gastos dedutíveis:\n");
+		System.out.printf("Máximo dedutível: %.2f\n", gTotal);
+		System.out.printf("Gastos dedutíveis: %.2f\n", gTotal);
 		
 		System.out.println("\nRESUMO:");
 		System.out.printf("Imposto bruto total: %.2f\n", iTotal);
-		System.out.printf("Abatimento:\n");
-		System.out.printf("Imposto devido:\n");
+		System.out.printf("Abatimento: %.2f\n", gTotal);
+		System.out.printf("Imposto devido: %.2f\n", iTotal-gTotal);
 		
 
 		sc.close();
 	}
 }
-/*
-Salário Imposto
-Abaixo de 3000 por mês:		Isento
-3000 até 5000 exclusive:	10%
-5000 ou acima:				20% 
-
- */
