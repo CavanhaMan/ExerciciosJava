@@ -28,14 +28,15 @@ public class Main {
 		float gEducacao = sc.nextFloat();
 		float gTotal = gMedicos + gEducacao;
 		
-		System.out.println("\nRELATÓRIO DE IMPOSTO DE RENDA");
+		System.out.println("\n\nRELATÓRIO DE IMPOSTO DE RENDA");
 		System.out.println("\nCONSOLIDADO DE RENDA:");
 		
 		/** IMPOSTO SOBRE SALARIO *********/
 		float iSalario=0;
-		if (rSalario <= 3000) iSalario = 0;
-		else if(rSalario > 3000 && rSalario < 5000) iSalario = rSalario*10/100;
-		else if(rSalario >= 5000) iSalario = rSalario*20/100;
+		float salMes=rSalario/12;
+		if (salMes <= 3000) iSalario = 0;
+		else if(salMes > 3000 && salMes < 5000) iSalario = rSalario*10/100;
+		else if(salMes >= 5000) iSalario = rSalario*20/100;
 		if (iSalario == 0) 
 			System.out.println("Imposto sobre salário: Isento");
 		else
@@ -57,12 +58,16 @@ public class Main {
 		
 		float iTotal = iSalario+iServico+iCapital;
 
+		/** DEDUÇÕES *********/
 		System.out.println("\nDEDUÇÕES:");
-		System.out.printf("Máximo dedutível: %.2f\n", iTotal*30/100);
+		float maxDedutivel = iTotal*30/100;
+		System.out.printf("Máximo dedutível: %.2f\n", maxDedutivel);
 		System.out.printf("Gastos dedutíveis: %.2f\n", gTotal);
 		
+		/** RESUMO *********/
 		System.out.println("\nRESUMO:");
 		System.out.printf("Imposto bruto total: %.2f\n", iTotal);
+		if(gTotal > maxDedutivel) gTotal = maxDedutivel;
 		System.out.printf("Abatimento: %.2f\n", gTotal);
 		System.out.printf("Imposto devido: %.2f\n", iTotal-gTotal);
 		
