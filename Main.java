@@ -58,7 +58,7 @@ public class Main {
 		float iTotal = iSalario+iServico+iCapital;
 
 		System.out.println("\nDEDUÇÕES:");
-		System.out.printf("Máximo dedutível: %.2f\n", gTotal);
+		System.out.printf("Máximo dedutível: %.2f\n", iTotal*30/100);
 		System.out.printf("Gastos dedutíveis: %.2f\n", gTotal);
 		
 		System.out.println("\nRESUMO:");
