@@ -20,14 +20,14 @@ public class Exercicio2 {
 		System.out.printf("   2) Ensino Médio      \n");
 		System.out.printf("   3) Ensino Superior   "); 
 		System.out.printf("   4) Pós-graduação     \n");
-		System.out.printf("   Digite uma opção:");
+		System.out.printf("   Digite uma opção: ");
 		int escolaridade = sc.nextInt();
-		System.out.printf("Você tem quantos anos de experiência profissional?");
+		System.out.printf("Você tem quantos anos de experiência profissional? ");
 		double experiencia = sc.nextDouble();
-		System.out.printf("Você tem disponibilidade para viajar (S/N)?");
-		boolean viajar = sc.hasNext();
-		System.out.printf("Você tem habilitação de motorista (S/N)?");
-		boolean motorista = sc.hasNext();
+		System.out.printf("Você tem disponibilidade para viajar (S/N)? ");
+		char viajar = sc.next().charAt(0);
+		System.out.printf("Você tem habilitação de motorista (S/N)? ");
+		char motorista = sc.next().charAt(0);
 
 		sc.close();
 	}
