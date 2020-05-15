@@ -13,23 +13,21 @@ public class Exercicio2 {
 		Locale.setDefault(new Locale("en", "US"));
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.printf("Renda anual com salário:\n");
+		System.out.printf("Renda anual com salário:");
+		float salario = sc.nextFloat();
 		System.out.printf("Qual sua escolaridade?\n");
-		System.out.printf("%25s","1) Ensino Fundamental");
-		System.out.printf("%25s","2) Ensino Médio\n");
-		System.out.printf("%25s","3) Ensino Superior"); 
-		System.out.printf("%25s","4) Pós-graduação\n");
-		System.out.printf("Digite uma opção: 1\n");
-		System.out.printf("Você tem quantos anos de experiência profissional?\n");
-		System.out.printf("Você tem disponibilidade para viajar (S/N)?\n");
-		System.out.printf("Você tem habilitação de motorista (S/N)?\n");
-
-		
-		
-		
-		
-		float rSalario = sc.nextFloat();
-		
+		System.out.printf("   1) Ensino Fundamental");
+		System.out.printf("   2) Ensino Médio      \n");
+		System.out.printf("   3) Ensino Superior   "); 
+		System.out.printf("   4) Pós-graduação     \n");
+		System.out.printf("   Digite uma opção:");
+		int escolaridade = sc.nextInt();
+		System.out.printf("Você tem quantos anos de experiência profissional?");
+		double experiencia = sc.nextDouble();
+		System.out.printf("Você tem disponibilidade para viajar (S/N)?");
+		boolean viajar = sc.hasNext();
+		System.out.printf("Você tem habilitação de motorista (S/N)?");
+		boolean motorista = sc.hasNext();
 
 		sc.close();
 	}
