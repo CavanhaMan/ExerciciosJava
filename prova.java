@@ -2,7 +2,7 @@ package aplicacao;
 import java.util.Scanner;
 import java.util.Locale;
 
-public class Prova {
+public class Programa {
 	public static void main(String[] args) {
 		Locale.setDefault(new Locale("en", "US"));
 		Scanner sc = new Scanner(System.in);
@@ -24,11 +24,10 @@ public class Prova {
 		int sVolume=0;
 		if (quantasCompras == 0) sVolume = 0;
 		else {
-			if (ticketMedio <= 3000) {
+			if (ticketMedio <= 3000 && quantasCompras <= 2)
 				sVolume = 20;
-				if (quantasCompras > 2)
-					sVolume = 40;
-			}
+			else if (ticketMedio <= 3000 && quantasCompras > 2)
+				sVolume = 40;
 			else if (ticketMedio > 3000)
 				sVolume = 60;
 		}
@@ -42,8 +41,8 @@ public class Prova {
 		System.out.printf("Score de inadimplência = %d pontos\n", sInadimplencia);
 		
 		int sPagamento=0;
-		if (quantasCompras > 0 && formaPagamento == 'D') sPagamento = 5;
-		else if (quantasCompras > 0 && (formaPagamento == 'C' || formaPagamento == 'B')) sPagamento = 10;
+		if (quantasCompras > 0 && (formaPagamento == 'D' || formaPagamento == 'd')) sPagamento = 5;
+		else if (quantasCompras > 0 && (formaPagamento == 'C' || formaPagamento == 'c' || formaPagamento == 'B' || formaPagamento == 'b')) sPagamento = 10;
 		System.out.printf("Score de forma de pagamento = %d pontos\n", sPagamento);
 		
 		System.out.println();
