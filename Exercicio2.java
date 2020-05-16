@@ -28,7 +28,31 @@ public class Exercicio2 {
 		char viajar = sc.next().charAt(0);
 		System.out.printf("Você tem habilitação de motorista (S/N)? ");
 		char motorista = sc.next().charAt(0);
-
+		
+		int pEscolaridade=0;
+		if (escolaridade == 1) pEscolaridade=10;     	//fundamental
+		else if (escolaridade == 2) pEscolaridade=20;	//ensino médio 
+		else if (escolaridade == 3) pEscolaridade=30;	//superior
+		else if (escolaridade == 4) pEscolaridade=40;	//pos-graduacao
+		System.out.printf("Pontos por escolaridade: %d\n", pEscolaridade);
+		
+		int pExperiencia=0;
+		if (experiencia == 0) pExperiencia = 0;							//0
+		else if (experiencia <= 2) pExperiencia = 10;					//ate 2
+		else if (experiencia > 2 && experiencia <=5) pExperiencia = 20;	//2-5
+		else if (experiencia >5) pExperiencia = 40;						//acima 5
+		System.out.printf("Pontos por experiência: %d\n", pExperiencia);
+		
+		/* Assistentes precisam ter pelo menos ensino médio, e habilitação de motorista.*/
+		/*Gerentes precisam ter acima de 2 anos de experiência e pelo menos ensino superior./
+		/*Analistas precisam ter acima de 5 anos de experiência, disponibilidade para viajar, e pelo menos ensino superior.*/
+		System.out.println("Você está habilitado para o(s) seguinte(s) cargo(s):");
+		if (pEscolaridade>=20 && (motorista == 'S' || motorista =='s')) System.out.println("ASSISTENTE");
+		else if (pEscolaridade>=30 && experiencia > 2) System.out.println("GERENTE");
+		else if (pEscolaridade>=30 && experiencia > 5 && (viajar=='s' || viajar=='S')) System.out.println("ANALISTAS");
+		else System.out.println("Infelizmente seu perfil não atende a empresa");
+		
+		
 		sc.close();
 	}
 }
@@ -63,15 +87,4 @@ Pontos por experiência: 40
 Você está habilitado para o(s) seguinte(s) cargo(s):
 GERENTE
 ANALISTA 
-*/
-/*
-System.out.format("╔════════════════════════════════════════════════════════════╗%n");
-		System.out.format("║                                                            ║█%n");
-		System.out.format("║                                                            ║█%n");
-		System.out.printf("║         Seja bem vindo ao nosso sistema telefônico!        ║█%n");
-		System.out.format("║                                                            ║█%n");
-		System.out.format("║                                                            ║█%n");
-		System.out.format("╚════════════════════════════════════════════════════════════╝█%n");
-		System.out.format(" ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀%n%n");
-	
 */
