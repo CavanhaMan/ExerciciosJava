@@ -1,4 +1,4 @@
-package projeto01;
+package aplicacao;
 /*
 +------------------+
 |Rodrigo CavanhaMan|
@@ -7,7 +7,7 @@ package projeto01;
 */
 import java.util.Scanner;
 import java.util.Locale;
-public class Main {
+public class Exercicio1 {
 	public static void main(String[] args) {
 		Locale.setDefault(new Locale("en", "US"));
 		Scanner sc = new Scanner(System.in);

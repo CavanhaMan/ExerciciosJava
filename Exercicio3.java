@@ -1,8 +1,14 @@
 package aplicacao;
+/*
++------------------+
+|Rodrigo CavanhaMan|
+|Exercicios em Java|
++------------------+
+*/
 import java.util.Scanner;
 import java.util.Locale;
 
-public class Programa {
+public class Exercicio3 {
 	public static void main(String[] args) {
 		Locale.setDefault(new Locale("en", "US"));
 		Scanner sc = new Scanner(System.in);
@@ -35,14 +41,14 @@ public class Programa {
 		System.out.println();
 		
 		int sInadimplencia=0;
-		if (atrasoPagamento > 1 || quantasCompras == 0)  sInadimplencia = 0;
-		else if (atrasoPagamento == 1 && quantasCompras > 0) sInadimplencia = 15;
-		else if (atrasoPagamento == 0 && quantasCompras > 0) sInadimplencia = 30;
+		if (atrasoPagamento>1 || quantasCompras==0)  sInadimplencia = 0;
+		else if (atrasoPagamento==1 && quantasCompras>0) sInadimplencia = 15;
+		else if (atrasoPagamento==0 && quantasCompras>0) sInadimplencia = 30;
 		System.out.printf("Score de inadimplência = %d pontos\n", sInadimplencia);
 		
 		int sPagamento=0;
-		if (quantasCompras > 0 && (formaPagamento == 'D' || formaPagamento == 'd')) sPagamento = 5;
-		else if (quantasCompras > 0 && (formaPagamento == 'C' || formaPagamento == 'c' || formaPagamento == 'B' || formaPagamento == 'b')) sPagamento = 10;
+		if (quantasCompras>0 && (formaPagamento=='D' || formaPagamento=='d')) sPagamento=5;
+		else if (quantasCompras>0 && (formaPagamento=='C' || formaPagamento=='c' || formaPagamento=='B' || formaPagamento=='b')) sPagamento=10;
 		System.out.printf("Score de forma de pagamento = %d pontos\n", sPagamento);
 		
 		System.out.println();
