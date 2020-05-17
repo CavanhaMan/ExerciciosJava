@@ -44,18 +44,34 @@ public class Exercicio2 {
 		/* Assistentes precisam ter pelo menos ensino médio, e habilitação de motorista.*/
 		/*Gerentes precisam ter acima de 2 anos de experiência e pelo menos ensino superior./
 		/*Analistas precisam ter acima de 5 anos de experiência, disponibilidade para viajar, e pelo menos ensino superior.*/
-		System.out.println("\nVocê está habilitado para o(s) seguinte(s) cargo(s):");
-		if (pEscolaridade>=20 && (motorista == 'S' || motorista =='s')) System.out.println("ASSISTENTE");
-		else if (pEscolaridade>=30 && experiencia > 2) System.out.println("GERENTE");
-		else if (pEscolaridade>=30 && experiencia > 5 && (viajar=='s' || viajar=='S')) System.out.println("ANALISTAS");
-		else System.out.println("\nInfelizmente seu perfil não atende a empresa");
 		
-		
+		if (pEscolaridade<20 || (motorista=='n' && pExperiencia==0) || (viajar=='n' && pExperiencia<20))
+			System.out.println("\nInfelizmente seu perfil não atende a empresa");
+		else {
+			if (pEscolaridade>=20 && (motorista == 'S' || motorista =='s'))  System.out.println("ASSISTENTE");
+			if (pEscolaridade>=30 && experiencia > 2) System.out.println("GERENTE");
+			if (pEscolaridade>=30 && experiencia > 5 && (viajar=='s' || viajar=='S')) System.out.println("ANALISTA");
+		}
 		sc.close();
 	}
 }
 
 /*
+_________________________________________________________
+Entrada de teste 0:
+---------------------------------------------------------
+2
+3
+N
+S
+----------------
+   RESULTADO:
+----------------
+Pontos por escolaridade: 20
+Pontos por experiência: 15
+Você está habilitado para o(s) seguinte(s) cargo(s):
+ASSISTENTE 
+
 _________________________________________________________
 Entrada de teste 1:
 ---------------------------------------------------------
@@ -63,9 +79,9 @@ Entrada de teste 1:
 10
 S
 S
----------------------------------------------------------
-RESULTADO:
----------------------------------------------------------
+----------------
+   RESULTADO:
+----------------
 Pontos por escolaridade: 10
 Pontos por experiência: 40
 Infelizmente seu perfil não atende a empresa 
@@ -77,9 +93,9 @@ Entrada de teste 2:
 8
 S
 N
----------------------------------------------------------
-RESULTADO:
----------------------------------------------------------
+----------------
+   RESULTADO:
+----------------
 Pontos por escolaridade: 40
 Pontos por experiência: 40
 Você está habilitado para o(s) seguinte(s) cargo(s):
