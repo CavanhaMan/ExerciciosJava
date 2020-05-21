@@ -15,16 +15,16 @@ public class Exercicio2 {
 		
 		System.out.printf("Qual sua escolaridade?\n");
 		System.out.printf("   1) Ensino Fundamental");
-		System.out.printf("   2) Ensino MÃ©dio      \n");
+		System.out.printf("   2) Ensino Médio      \n");
 		System.out.printf("   3) Ensino Superior   "); 
-		System.out.printf("   4) PÃ³s-graduaÃ§Ã£o     \n");
-		System.out.printf("   Digite uma opÃ§Ã£o: ");
+		System.out.printf("   4) Pós-graduação     \n");
+		System.out.printf("   Digite uma opção: ");
 		int escolaridade = sc.nextInt();
-		System.out.printf("\nVocÃª tem quantos anos de experiÃªncia profissional? ");
+		System.out.printf("\nVocê tem quantos anos de experiência profissional? ");
 		int experiencia = sc.nextInt();
-		System.out.printf("VocÃª tem disponibilidade para viajar (S/N)? ");
+		System.out.printf("\nVocê tem disponibilidade para viajar (S/N)? ");
 		char viajar = sc.next().charAt(0);
-		System.out.printf("VocÃª tem habilitaÃ§Ã£o de motorista (S/N)? ");
+		System.out.printf("\nVocê tem habilitação de motorista (S/N)? ");
 		char motorista = sc.next().charAt(0);
 		
 		int pEscolaridade=0;
@@ -32,22 +32,23 @@ public class Exercicio2 {
 		else if (escolaridade == 2) pEscolaridade=20;	//ensino mÃ©dio 
 		else if (escolaridade == 3) pEscolaridade=30;	//superior
 		else if (escolaridade == 4) pEscolaridade=40;	//pos-graduacao
-		System.out.printf("\nPontos por escolaridade: %d\n", pEscolaridade);
+		System.out.printf("\n\nPontos por escolaridade: %d\n", pEscolaridade);
 		
 		int pExperiencia=0;
 		if (experiencia == 0) pExperiencia = 0;							//0
 		else if (experiencia <= 2) pExperiencia = 10;					//ate 2
 		else if (experiencia > 2 && experiencia <=5) pExperiencia = 20;	//2-5
 		else if (experiencia >5) pExperiencia = 40;						//acima 5
-		System.out.printf("Pontos por experiÃªncia: %d\n", pExperiencia);
+		System.out.printf("Pontos por experiência: %d\n", pExperiencia);
 		
 		/* Assistentes precisam ter pelo menos ensino mÃ©dio, e habilitaÃ§Ã£o de motorista.*/
 		/*Gerentes precisam ter acima de 2 anos de experiÃªncia e pelo menos ensino superior./
 		/*Analistas precisam ter acima de 5 anos de experiÃªncia, disponibilidade para viajar, e pelo menos ensino superior.*/
 		
 		if (pEscolaridade<20 || (motorista=='n' && pExperiencia==0) || (viajar=='n' && pExperiencia<20))
-			System.out.println("\nInfelizmente seu perfil nÃ£o atende a empresa");
+			System.out.println("\nInfelizmente seu perfil não atende a empresa");
 		else {
+			System.out.println("\nVocê está habilitado para o(s) seguinte(s) cargo(s):");
 			if (pEscolaridade>=20 && (motorista == 'S' || motorista =='s'))  System.out.println("ASSISTENTE");
 			if (pEscolaridade>=30 && experiencia > 2) System.out.println("GERENTE");
 			if (pEscolaridade>=30 && experiencia > 5 && (viajar=='s' || viajar=='S')) System.out.println("ANALISTA");
