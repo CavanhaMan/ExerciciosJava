@@ -1,3 +1,8 @@
+/*-----------------*
+|Rodrigo CavanhaMan|
+|       IFTM       |
+|     URI 2174     |
+*------------------*/
 /*
 public List<String> ler() {
         //Mesmo esquema do método acima, mas agora usamos a caixa de abrir arquivo.

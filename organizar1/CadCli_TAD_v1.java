@@ -1,10 +1,8 @@
-/*
-╔════════════════════╗
-║ Rodrigo CavanhaMan ║
-║        IFTM        ║
-║      Aula TAD      ║
-╚════════════════════╝
-*/
+/*-------------------*
+| Rodrigo CavanhaMan |
+|        IFTM        |
+|      Aula TAD      |
+*--------------------*/
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Locale;

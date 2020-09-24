@@ -1,3 +1,6 @@
+/*-----------------*
+|Rodrigo CavanhaMan|
+*------------------*/
 import java.util.Vector;	 //imports vector utility
 import java.util.Scanner;  //imports scanner utillity
 class Main{

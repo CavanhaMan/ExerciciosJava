@@ -1,3 +1,6 @@
+/*-----------------*
+|Rodrigo CavanhaMan|
+*------------------*/
 
 //import java.io.File;
 import java.util.Scanner;

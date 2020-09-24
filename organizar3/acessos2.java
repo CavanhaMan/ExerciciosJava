@@ -1,10 +1,8 @@
-/*
-╔════════════════════╗
-║ Rodrigo CavanhaMan ║
-║        IFTM        ║
-║  Exercicio Carlos  ║
-╚════════════════════╝
-*/
+/*-------------------*
+| Rodrigo CavanhaMan |
+|        IFTM        |
+|  Exercicio Carlos  |
+*--------------------*/
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;

@@ -1,10 +1,8 @@
-/*
-+--------------------+
+/*-------------------*
 | Rodrigo CavanhaMan |
 |        IFTM        |
 |      URI 1253      |
-+--------------------+
-*/
+*--------------------*/
 import java.util.Locale;
 import java.util.Scanner;
 

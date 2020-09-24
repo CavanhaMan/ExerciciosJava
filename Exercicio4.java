@@ -1,10 +1,8 @@
 package aplicacao;
-/*
-+------------------+
+/*-----------------*
 |Rodrigo CavanhaMan|
 |Exercicios em Java|
-+------------------+
-*/
+*------------------*/
 import java.util.Scanner;
 import java.util.Locale;
 

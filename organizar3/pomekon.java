@@ -1,10 +1,8 @@
-/*
-╔════════════════════╗
-║ Rodrigo CavanhaMan ║
-║        IFTM        ║
-║      URI 2174      ║
-╚════════════════════╝
-*/
+/*-----------------*
+|Rodrigo CavanhaMan|
+|       IFTM       |
+|     URI 2174     |
+*------------------*/
 import java.util.Scanner;
 import java.util.LinkedHashSet;
 import java.util.Set;

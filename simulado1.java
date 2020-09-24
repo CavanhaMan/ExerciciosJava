@@ -1,10 +1,8 @@
-/*
-+--------------------+
+/*-------------------*
 ¦ Rodrigo CavanhaMan ¦
 ¦        IFTM        ¦
 ¦ Simulado Prova Ex4 ¦
-+--------------------+
-*/
+*--------------------*/
 import java.util.Locale;
 import java.util.Scanner;
 import java.util.Arrays;

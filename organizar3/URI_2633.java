@@ -1,10 +1,8 @@
-/*
-╔════════════════════╗
-║ Rodrigo CavanhaMan ║
-║        IFTM        ║
-║      URI 2633      ║
-╚════════════════════╝
-*/
+/*-------------------*
+| Rodrigo CavanhaMan |
+|        IFTM        |
+|      URI 2633      |
+*--------------------*/
 import java.util.Scanner;
 
 public class URI_2633 {
