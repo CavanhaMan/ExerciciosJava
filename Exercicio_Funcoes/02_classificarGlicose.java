@@ -1,10 +1,8 @@
-/*
-+--------------------------+
+/*-------------------------*
 |    Rodrigo CavanhaMan    |
 |           IFTM           |
 |  Sistemas para Internet  |
-+--------------------------+
-*/
+*--------------------------*/
 	/**
 	* Imprime na tela a classificação da glicose recebida, de acordo com
 	* a seguinte tabela de referência: (1) Até 100mg/dl = Normal;

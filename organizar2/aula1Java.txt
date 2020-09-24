@@ -1,0 +1,72 @@
+22:24 22/02/2017
+
+ALT+SHIFT+X, J = mostra a saída do programa
+
+
+entrada:
+System.out.println("Hello World WHATSAAAAAP!!!");
+
+saída:
+antes do public:
+import java.util.Scanner;
+	Scanner sc = new Scanner(System.in);
+
+==============================
+
+exemplo 1:
+
+import java.util.Scanner;
+public class programa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		Scanner sc = new Scanner(System.in);
+		
+		int x, y;
+		
+		System.out.println("Por favor forneça o valor de X");
+		
+		x = sc.nextInt();
+		
+		System.out.println("Este é o valor de X que foi digitado:" + x);
+		
+		
+		
+	}
+
+}
+
+
+=============================
+
+import java.util.Scanner;
+public class programa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		Scanner sc = new Scanner(System.in);
+		
+		int x, y, soma;
+		
+		System.out.println("Por favor forneça o valor de X");
+		
+		x = sc.nextInt();
+		
+		System.out.println("Por favor forneça o valor de y");
+		
+		y = sc.nextInt();
+
+		soma = x + y;
+		System.out.println("Este é o valor de X que foi digitado:" + x);
+		System.out.println("Este é o valor de y que foi digitado:" + y);
+		
+		System.out.println("Este é o valor da soma:" + soma);
+		System.out.println("Este é o valor da média:" + (soma/2));
+		
+		System.out.println("Agradecemos pela atenção! Tenha uma boa noite!");
+		
+	}
+
+}

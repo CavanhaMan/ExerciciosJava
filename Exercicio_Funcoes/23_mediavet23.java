@@ -1,11 +1,9 @@
-/*
-+--------------------------+
+/*-------------------------*
 |    Rodrigo CavanhaMan    |
 |           IFTM           |
 |  Sistemas para Internet  |
 |       EXERCICIO 23       |
-+--------------------------+
-*/
+*--------------------------*/
 import java.util.Locale;
 import java.util.Scanner;
 

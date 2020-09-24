@@ -1,0 +1,15 @@
+1024	ok1	ok
+1168	ok2	ok
+1234	ok3	ok
+1253	ok4	ok
+1607	ok5	ok
+1759	ok6	ok
+1871	ok7	ok
+1873	ok8	ok
+2062	ok9	ok
+2242	ok10	ok
+2253	ok11	ok
+
+
+2157	12
+1667	13

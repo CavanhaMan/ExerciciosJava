@@ -1,0 +1,17 @@
+4
+Maria_José
+3222-1234
+1
+120
+XY_Informática
+3223-6666
+2
+457
+Joaquim_Silva
+3222-3344
+1
+50
+Antônio_Carlos
+3212-6622
+0
+134
