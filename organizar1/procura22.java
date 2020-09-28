@@ -1,21 +1,19 @@
-/*
-╔══════════════════════════╗
-║    Rodrigo CavanhaMan    ║
-║           IFTM           ║
-║  Sistemas para Internet  ║
-║                          ║
-║       EXERCICIO 22       ║
-╚══════════════════════════╝
-*/
+/*-------------------------*
+|    Rodrigo CavanhaMan    |
+|           IFTM           |
+|  Sistemas para Internet  |
+|                          |
+|       EXERCICIO 22       |
+*--------------------------*/
 import java.util.Locale;
 import java.util.Scanner;
 
 public class procura22 {
 
 	/**
-	 * Função para entrada de dados no vetor
+	 * Funcao para entrada de dados no vetor
 	 * @param N - quantidade de elementos
-	 * @return - devolve o vetor já preenchido
+	 * @return - devolve o vetor ja preenchido
 	 */
 	public static int[] lerVetor(int N){
 		Scanner sc = new Scanner(System.in);
@@ -33,8 +31,8 @@ public class procura22 {
 	* Realiza a busca de um elemento x no vetor
 	* @param vet Um vetor ja preenchido
 	* @param x Um valor a ser procurado
-	* @return A primeira ocorrencia de x no vetor. Se o valor x nao
-	* existir, retorna -1
+	* @return A primeira ocorrencia de x no vetor.
+	* Se o valor x nao existir, retorna -1
 	*/
 	public static int busca(int[] vet, int x){
 		for(int i=0 ; i<vet.length ; i++)
@@ -59,7 +57,7 @@ public class procura22 {
 		sc.useLocale(Locale.ENGLISH);
 		Locale.setDefault(new Locale("en", "US"));
 
-		System.out.printf("Quantos valores serão digitados? ");
+		System.out.printf("Quantos valores serao digitados? ");
 		int N = sc.nextInt();
 		int[] vet = lerVetor(N);
 
@@ -69,9 +67,9 @@ public class procura22 {
 		int P = busca(vet,x);
 		
 		if(P == -1)
-			System.out.printf("Número não encontrado!");
+			System.out.printf("Numero nao encontrado!");
 		else
-			System.out.printf("Número encontrado na posição %d.",P);
+			System.out.printf("Numero encontrado na posicao %d.",P);
 		
 		
 		sc.close();
