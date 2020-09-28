@@ -1,5 +1,3 @@
-package projeto01;
-
 import java.util.Scanner;
 
 /* String - Exercicio04 - (22/09) - Validar tamanho do CPF - utilizar funções */

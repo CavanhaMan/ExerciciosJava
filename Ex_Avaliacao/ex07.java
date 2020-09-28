@@ -1,5 +1,3 @@
-package projeto01;
-
 import java.util.Scanner;
 
 /* String - Exercicio07 - (22/09) - Tratar data */
