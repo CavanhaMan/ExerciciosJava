@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /* String - Exercicio07 - (22/09) - Tratar data */
 
-public class ex07 {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 

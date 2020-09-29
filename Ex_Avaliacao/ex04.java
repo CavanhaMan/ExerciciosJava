@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /* String - Exercicio04 - (22/09) - Validar tamanho do CPF - utilizar funções */
 
-public class ex04 {
+public class Main {
 	public static void main(String[] args) {
 
 		if (entraCpf()) System.out.println("valido");

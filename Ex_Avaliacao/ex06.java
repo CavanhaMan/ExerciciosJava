@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /* String - Exercicio06 - (22/09) - Ler letra a letra na frase */
 
-public class ex06 {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
