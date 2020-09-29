@@ -4,12 +4,12 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		String frase = sc.nextLine();
-		String[] newFrase = frase.split(" ");
+		String T = sc.nextLine();
+		String[] newT = T.split(" ");
 		
-		for (int i=0 ; i<newFrase.length ; i++) {
-			if (newFrase[i].length()>3)
-				System.out.println(newFrase[i].substring(0,3));
+		for (int i=0 ; i<newT.length ; i++) {
+			if (newT[i].length()>3)
+				System.out.println(newT[i].substring(0,3));
 		}
 		//System.out.print(String.join("\n", newFrase));
 		sc.close();
