@@ -1,0 +1,34 @@
+Faça um programa que recebe como entrada uma frase T. O programa deverá imprimir as 3 primeiras letras de todas as palavras, que tenham mais de 3 caracteres, presentes na frase T.
+obs.:
+Não considerar acentos.
+considerar o ponto( e virgula como parte das palavras.
+Exemplo:
+Entrada:
+Saída
+Nos nao vemos as coisas como elas sao, mas como nos somos.	
+vem
+
+coi
+
+com
+
+ela
+
+sao
+
+com
+
+som
+
+------
+Faça um programa que receba como entrada duas Strings s1 e s2. O algoritmo deve imprimir a parte/substring da String s1 que começa com a primeira ocorrência de s2 ou toda a frase s1, caso s2 não exista em s1.
+obs.:
+1. Não considerar acentos.
+2. A função substring tem duas implementações: substring(int, int) e substring(int).
+Entrada
+Saída
+Uberlandia tem dois campus do IFTM, o Uberlandia Centro e o Uberlandia.
+
+IFTM
+
+IFTM, o Uberlandia Centro e o Uberlandia.
