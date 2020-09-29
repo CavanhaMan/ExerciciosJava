@@ -7,10 +7,10 @@ public class Main {
 		String T = sc.nextLine();
 		String[] newT = T.split(" ");
 		
-		for (int i=0 ; i<newT.length ; i++) {
+		for (int i=0 ; i<newT.length ; i++)
 			if (newT[i].length()>3)
 				System.out.println(newT[i].substring(0,3));
-		}
+		
 		//System.out.print(String.join("\n", newFrase));
 		sc.close();
 	}
