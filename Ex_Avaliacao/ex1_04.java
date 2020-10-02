@@ -10,7 +10,6 @@ public class Main {
 
 		if (entraCpf()) System.out.println("valido");
 		else System.out.println("invalido");
-		
 	}
 
 	private static boolean entraCpf() {

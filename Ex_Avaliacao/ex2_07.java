@@ -1,7 +1,7 @@
 /*---------------------*
 | Rodrigo CavanhaMan   |
 | Exercicio Avaliativo |
-| 01                   |
+| 07                   |
 *----------------------*/
 import java.util.Scanner;
 
@@ -9,14 +9,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
-		String A = sc.nextLine();
-		String B = sc.nextLine();
-		if (A.equals(B))
-			System.out.println("correto");
-		else
-			System.out.println("incorreto");
-		
+
+		String data = sc.nextLine();
+		String d = data.substring(0,2);
+		System.out.printf("Estamos no dia %s do mes.\n",d);
 		sc.close();
 	}
 }
