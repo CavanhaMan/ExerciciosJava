@@ -1,4 +1,3 @@
-package projeto01;
 /*---------------------*
 | Rodrigo CavanhaMan   |
 | Exercicio Avaliativo |
@@ -16,13 +15,18 @@ public class Main {
 		
 		double custo = Double.parseDouble(sc.nextLine());
 		String cidade = sc.nextLine();
-		if (cidade.equals("Uberlandia"))
-			System.out.printf("O custo de vida em %s e R$ %.2f.", cidade, custo);
-		else if (cidade.equals("Brasilia"))
-			System.out.printf("O custo de vida em %s e R$ %.2f.", cidade, custo*2);
-		else
-			System.out.printf("O custo de vida em %s e R$ %.2f.", cidade, custo/2);
-		
+		double custoCalculado = ajustaCusto(cidade,custo);
+		System.out.printf("O custo de vida em %s e R$ %.2f.", cidade, custoCalculado);
+
 		sc.close();
+	}
+
+	private static double ajustaCusto(String cidade, double custo) {
+		if (cidade.equals("Uberlandia"))
+			return custo;
+		else if (cidade.equals("Brasilia"))
+			return custo*2;
+		else
+			return custo/2;
 	}
 }
