@@ -1,3 +1,8 @@
+/*---------------------*
+| Rodrigo CavanhaMan   |
+| Exercicio Avaliativo |
+| 10                   |
+*----------------------*/
 import java.util.Scanner;
 
 public class Main {

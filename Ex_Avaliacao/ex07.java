@@ -1,6 +1,9 @@
+/*---------------------*
+| Rodrigo CavanhaMan   |
+| Exercicio Avaliativo |
+*----------------------*
+String - Exercicio07 - (22/09) - Tratar data */
 import java.util.Scanner;
-
-/* String - Exercicio07 - (22/09) - Tratar data */
 
 public class Main {
 	public static void main(String[] args) {
@@ -11,7 +14,6 @@ public class Main {
 		System.out.printf("Estamos no dia %s do mes.\n",d);
 		sc.close();
 	}
-
 }
 /*
 Faça um programa que recebe como entrada a variável String 'data'.
